@@ -21,6 +21,8 @@ npx expo start
 ---
 ---
 
+## Basics of React Native:
+
 
 
 
