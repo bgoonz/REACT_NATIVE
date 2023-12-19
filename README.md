@@ -37,3 +37,35 @@ npx expo start
 - In normal react for html, text between elements is ok... i.e. `<div>This is some text </div>`, however, this will not work in React Native... text must go inside of a `<Text>Hello World!!!!</Text>` element. 
 
 
+- The `<View>` component is a container component... similar to a div.
+
+
+
+
+The most fundamental component for building a UI,A`View`Ais a container that supports layout withA[flexbox](https://reactnative.dev/docs/flexbox),A[style](https://reactnative.dev/docs/style),A[some touch handling](https://reactnative.dev/docs/handling-touches), andA[accessibility](https://reactnative.dev/docs/accessibility)Acontrols.A`View`Amaps directly to the native view equivalent on whatever platform React Native is running on, whether that is aA`UIView`,A`<div>`,A`android.view`, etc.
+
+`View`Ais designed to be nested inside other views and can have 0 to many children of any type.
+
+
+- When using html elements in react you don't need to import anything... in react native you need to import all of the components...i.e.
+
+```js
+import { StyleSheet, Text, View, Button } from "react-native";
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <View>
+        <Text>Another piece of text</Text>
+      </View>
+      <Text>Hello World!!!!</Text>
+      <Button></Button>
+    </View>
+  );
+}
+```
+
+- In react native you don't put the text for a button between button tags... instead you write it like this:
+
+```js
+      <Button title='Press me!!'/>
+```
