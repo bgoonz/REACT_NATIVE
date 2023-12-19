@@ -8,8 +8,8 @@ export default function App() {
         <Text>Another piece of text</Text>
       </View>
       <Text>Hello World!!!!</Text>
-      <Text>Part 2</Text>
-      <Button title='Press me!!'/>
+      <Text style={{ margin: 100 }}>Part 2</Text>
+      <Button title="Press me!!" />
     </View>
   );
 }

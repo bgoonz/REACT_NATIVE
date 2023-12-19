@@ -69,3 +69,6 @@ export default function App() {
 ```js
       <Button title='Press me!!'/>
 ```
+
+
+- To style prop is not supported on all React Native elements but it is supported on the view element.
