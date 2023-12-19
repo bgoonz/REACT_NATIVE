@@ -72,3 +72,44 @@ export default function App() {
 
 
 - To style prop is not supported on all React Native elements but it is supported on the view element.
+
+**Inline Styling**
+
+```js
+import { StyleSheet, Text, View, Button } from "react-native";
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <View>
+        <Text>Another piece of text</Text>
+      </View>
+      <Text>Hello World!!!!</Text>
+      <Text style={{ margin: 100 }}>Part 2</Text>
+      <Button title="Press me!!" />
+    </View>
+  );
+}
+```
+
+
+- This is how style objects are created:
+
+```js
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center"
+  },
+  text:{
+    margin:16,
+    borderWidth:2,
+    borderColor:'blue',
+    padding:16
+  }
+});
+```
+
+- You can just create an object without using the StyleSheet.create function but then this deprives you of error catching and auto complete functionalities.
