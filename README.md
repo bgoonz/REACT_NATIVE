@@ -105,3 +105,14 @@ const styles = StyleSheet.create({
 ```
 
 - You can just create an object without using the StyleSheet.create function but then this deprives you of error catching and auto complete functionalities.
+
+
+---
+
+
+**Flexbox**
+
+- A set of styling properties that define how elements are positioned inside of containers.
+
+
+Flexbox works the same way in React Native as it does in CSS on the web, with a few exceptions. The defaults are different, with `flexDirection` defaulting to `column` instead of `row`, `alignContent` defaulting to `flex-start` instead of `stretch`, `flexShrink` defaulting to `0` instead of `1`, the `flex` parameter only supporting a single number.
