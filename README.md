@@ -116,3 +116,8 @@ const styles = StyleSheet.create({
 
 
 Flexbox works the same way in React Native as it does in CSS on the web, with a few exceptions. The defaults are different, with `flexDirection` defaulting to `column` instead of `row`, `alignContent` defaulting to `flex-start` instead of `stretch`, `flexShrink` defaulting to `0` instead of `1`, the `flex` parameter only supporting a single number.
+
+
+- Unlike in normal react web development, in React Native every view defaults to flex box positioning.
+
+
