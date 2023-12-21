@@ -120,4 +120,8 @@ Flexbox works the same way in React Native as it does in CSS on the web, with a 
 
 - Unlike in normal react web development, in React Native every view defaults to flex box positioning.
 
+- For `row ` the main axis is from left to right, for `row-reverse` the main axis is right to left for `column` it is top to bottom and for `column-reverse` it is bottom to top.
+
+- We can use `justifyContent` to organize elements along the main axis and `alignItems` to organize elements along the cross axis.
+
 
