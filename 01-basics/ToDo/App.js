@@ -23,7 +23,7 @@ export default function App() {
         {courseGoals.map((goal) => {
           return (
             <View style={styles.goalItem} key={goal}>
-              <Text>{goal}</Text>
+              <Text style={styles.goalText}>{goal}</Text>
             </View>
           );
         })}
@@ -61,7 +61,9 @@ const styles = StyleSheet.create({
     margin: 8,
     padding: 8,
     borderRadius: 6,
-    backgroundColor: "#5e0acc",
+    backgroundColor: "#5e0acc"
+  },
+  goalText: {
     color: "white"
   }
 });
